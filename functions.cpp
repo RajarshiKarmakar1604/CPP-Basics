@@ -95,6 +95,6 @@ int main(){
 
     
     arrdo(arr, n);
-    cout << "Value inside int main" << arr[0] << endl;
+    cout << "Value inside int main" << arr[0] << endl; // value inside function and og value gets modified in a array, array always pass by reference
     
     return 0;}
