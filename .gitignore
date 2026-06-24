@@ -9,3 +9,6 @@ loops.exe
 functions.exe
 strings.exe
 *.exe
+pattern2.cpp
+pattern3.cpp
+pattern4.cpp
