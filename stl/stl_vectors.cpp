@@ -1,8 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
-
-//pairs datatype
-/*void explainVectors(){
+void explainVectors(){
+    //comment and uncomment lines according to need 
     vector <int> v; // creates an empty container
     v.push_back(1); // inserts an already created object into the vector
     v.emplace_back(2); // constructs the object directly inside the vector
@@ -42,7 +41,7 @@ using namespace std;
     cout<<v.back(); //prints the last element
 
 
-}*/
+} 
 
 void printingVectors(){
     vector <int> v; 
