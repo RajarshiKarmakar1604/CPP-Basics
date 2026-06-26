@@ -1,13 +1,3 @@
-cpp_basics.exe
-input_output.exe
-datatypes.exe
-nested_if_else_p2.exe
-switch_case.exe
-arrays_strings.exe
-forloop.exe
-loops.exe
-functions.exe
-strings.exe
 *.exe
 pattern2.cpp
 pattern3.cpp
