@@ -38,8 +38,19 @@ void explainMap(){
 }
 
 
+
+void explainMultiMap(){
+    
+    // everything same as map, only it can store multiple keys
+    // mp[key] cannot be used here
+
+
+}
+
+
 int main(){
     explainMap();
+    explainMultiMap();
     return 0;
 
 }
