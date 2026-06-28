@@ -47,10 +47,16 @@ void explainMultiMap(){
 
 }
 
+void explainUnorderedMap(){
+    // same as set and unordered set differnece, randomised order, unique keys
+    // O(1) or O(1);
+}
+
 
 int main(){
     explainMap();
     explainMultiMap();
+    explainUnorderedMap();
     return 0;
 
 }
