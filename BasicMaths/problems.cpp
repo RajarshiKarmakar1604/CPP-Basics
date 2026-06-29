@@ -13,10 +13,35 @@ void problem1(int n){
         count +=1;
     }
     
-    cout<<"The total number of digits in " << n_copy << " is: " <<count <<endl;;
+    cout<<"The total number of digits in " << n_copy << " is: " <<count <<endl;;}
+void problem2(int n){
+    int revNum = 0;
+    int n_copy = n;
+    while(n>0){
+        int last_digit  = n%10;
+        revNum = (revNum*10)+last_digit;
+        n=n/10;
+
+    }
+    cout<<"The reverse of the number " << n_copy << " is: " << revNum;
 }
+void problem3(int n){
+    int revNum = 0;
+    int n_copy = n;
+    while(n>0){
+        int last_digit  = n%10;
+        revNum = (revNum*10)+last_digit;
+        n=n/10;
 
-
+    }
+    if (revNum == n_copy){
+        cout<<n_copy<<" is a palindrome number"<<endl;
+    }
+    else {
+        cout<<n_copy<<" is not a palindrome number"<<endl;
+    }
+    
+}
 
 
 
@@ -32,6 +57,6 @@ int main(){
         cout<<"Enter Integer n:";
         int n;
         cin >> n;
-        problem1(n);
+        problem3(n);
     }
 }
