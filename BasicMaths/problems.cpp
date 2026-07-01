@@ -103,8 +103,45 @@ void problem5(int n){
     
     
 }
+void problem6(int n)
+{
+    if (n <= 1) {
+        cout << "False";
+        return;
+    }
 
+    for (int i = 2; i * i <= n; i++) {
+        if (n % i == 0) {
+            cout << "False";
+            return;
+        }
+    }
 
+    cout << "True" <<endl;
+}
+void problem7(int a, int b ){
+    // euclid : gcd ( a, b)  = gcd ( a-b, b) if a>b
+    // and gcd(0, b)  = b
+    // gcd(42, 10) = gcd(32, 10) = gcd (22,10) = gcd (12,10) = gcd (2,10)
+    // now if 42%10  = 2
+    // thus, gcd(42,10)  = gcd(42%10, 10)
+
+    while(a>b && b>0){
+        if(a>b){
+            a = a%b;
+        }
+        else{
+            b = b%a;
+        }
+        if (a==0){
+            cout<<b;
+        }
+        else{
+            cout<<a;
+        }
+    }
+
+}
 
 // using test cases
 
@@ -113,9 +150,11 @@ int main(){
     int t;
     cin >> t;
     for (int i=0; i<t; i++){
-        cout<<"Enter Integer n:";
-        int n;
-        cin >> n;
-        problem5(n);
+        cout<<"Enter Integer a and b:" << endl;
+        int a; 
+        int b;
+        cin>>a;
+        cin>>b;
+        problem7(a,b);
     }
 }
